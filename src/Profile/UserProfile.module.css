@@ -1,0 +1,26 @@
+/* UserProfile.module.css */
+.user-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center; /* Вирівнюємо текст по центру */
+  }
+  
+  .short-message {
+    font-style: italic;
+  }
+  
+  .avatar {
+    max-width: 100px; /* Розмір аватара */
+    border-radius: 50%; /* Округлім аватар */
+    margin-bottom: 10px; /* Додаємо відступ під аватаром */
+  }
+  

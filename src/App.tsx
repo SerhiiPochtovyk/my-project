@@ -1,15 +1,26 @@
-import "./App.css";
-import { Footer } from "./Footer";
-import { Profile } from "./Profile/Profile";
+import './App.css';
+import UserProfile from './Profile/UserProfile';
 
+function App() {
+  const userData = {
+    name: "Serhii",
+    contacts: ["email@example.com", "+123456789"],
+    shortMessage: "Stay curious, keep coding, and never stop learning. Your next great breakthrough is just around the corner!",
+    avatar: "https://cdn-icons-png.flaticon.com/512/2922/2922506.png", 
+  };
 
-const user = { userName: "Serhii " };
-const App = () => (
-  <div className="App">
-    <h1> {user.userName}</h1>
-    <Footer copyright="" />
-    <Profile message="matherfaca"
-    contacts="myphone" />
-  </div>
-);
+  return (
+    <div className="App">
+      <div className="center-container">
+        <UserProfile
+          name={userData.name}
+          contacts={userData.contacts}
+          shortMessage={userData.shortMessage}
+          avatar={userData.avatar}
+        />
+      </div>
+    </div>
+  );
+}
+
 export default App;

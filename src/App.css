@@ -1,1 +1,10 @@
 
+.App {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+  }
+  
+  .center-container {
+    text-align: center;
+  }
